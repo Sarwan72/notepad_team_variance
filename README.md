@@ -114,7 +114,13 @@ cd frontend
 npm install
 ```
 
-3. Start the frontend application
+3. Create a `.env` file
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+4. Start the frontend application
 
 ```bash
 npm start
