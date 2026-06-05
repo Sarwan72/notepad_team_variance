@@ -11,8 +11,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://notepad-team-variance.vercel.app"
+      "https://notepad-team-variance.vercel.app",
+      "https://notepad-team-variance-ikqfqckzx-sarwan-kumars-projects-17476828.vercel.app"
     ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
