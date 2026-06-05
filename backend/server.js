@@ -9,7 +9,11 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://notepad-team-variance.vercel.app"
+    ],
+    credentials: true,
   })
 );
 app.use(express.json())
